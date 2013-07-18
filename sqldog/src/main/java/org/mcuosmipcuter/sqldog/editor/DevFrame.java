@@ -1,15 +1,40 @@
+/**
+*   JDBC database client for application developers and support
+*   Copyright (C) 2003 - 2013 Michael Heinzelmann,
+*   Michael Heinzelmann IT-Consulting
+*
+*   This program is free software: you can redistribute it and/or modify
+*   it under the terms of the GNU General Public License as published by
+*   the Free Software Foundation, either version 3 of the License, or
+*   (at your option) any later version.
+*
+*   This program is distributed in the hope that it will be useful,
+*   but WITHOUT ANY WARRANTY; without even the implied warranty of
+*   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+*   GNU General Public License for more details.
+*
+*   You should have received a copy of the GNU General Public License
+*   along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 package org.mcuosmipcuter.sqldog.editor;
 
-import javax.swing.*;
-import java.awt.*;
-import javax.swing.text.*;
-import javax.swing.plaf.basic.*;
-import java.util.*;
-import javax.swing.event.*;
-import javax.swing.event.DocumentEvent;
-import javax.swing.border.*;
-import java.awt.event.*;
-import javax.swing.undo.*;
+import java.awt.BorderLayout;
+import java.awt.Color;
+import java.awt.Insets;
+import java.awt.event.KeyEvent;
+import java.util.Locale;
+import java.util.ResourceBundle;
+
+import javax.swing.BorderFactory;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JScrollPane;
+import javax.swing.JTextArea;
+import javax.swing.border.TitledBorder;
+import javax.swing.event.UndoableEditEvent;
+import javax.swing.event.UndoableEditListener;
+import javax.swing.undo.UndoManager;
 
 public class DevFrame extends JFrame
 {
