@@ -55,6 +55,7 @@ import javax.swing.undo.UndoManager;
 import org.mcuosmipcuter.dog4sql.editor.CStyleCommentedDocument;
 import org.mcuosmipcuter.dog4sql.editor.HighlightingUI;
 import org.mcuosmipcuter.dog4sql.editor.SyntaxPainter;
+import org.mcuosmipcuter.dog4sql.sql.TextToStatementsParser;
 
 public class SQLPanel extends JPanel implements WorkSpacePersistence,
 //FocusListener,
@@ -329,9 +330,9 @@ AdjustmentListener
 			selectionStart = sqlWindow.getSelectionStart();
 			selectionEnd = sqlWindow.getSelectionEnd();
 			textSelected = true;
-			return sqlWindow.getSelectedText().split(";");
+			return TextToStatementsParser.getSqlStatementsFrom(sqlWindow.getSelectedText());
 		}
-		return sqlWindow.getText().split(";");
+		return TextToStatementsParser.getSqlStatementsFrom(sqlWindow.getText());
 	}
 
 	public void restoreSelection()
