@@ -1,9 +1,10 @@
-sqldog
-======
+dog4sql
+=======
 
 JDBC database client for application developers and support
 
-Originally developed 2003 since July 2013 now on github
+Originally developed 2003 under the name of SQLDog 
+since July 2013 now on github as dog4sql
 
 Features:
 
