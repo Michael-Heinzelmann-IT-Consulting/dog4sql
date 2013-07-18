@@ -1,9 +1,9 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>org.mcuosmipcuter.sqldog</groupId>
-  <artifactId>sqldog</artifactId>
+  <groupId>org.mcuosmipcuter.dog4sql</groupId>
+  <artifactId>dog4sql</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  <name>SQLDog</name>
+  <name>dog4sql</name>
   <description>SQL fetcher</description>
   <build>
     <plugins>
@@ -18,12 +18,12 @@
     </plugins>
   </build>
   <scm>
-  	<url>https://github.com/Michael-Heinzelmann-IT-Consulting/sqldog.git</url>
-  	<connection>scm:git:git://github.com/Michael-Heinzelmann-IT-Consulting/sqldog.git</connection>
-  	<developerConnection>scm:git:git://github.com/Michael-Heinzelmann-IT-Consulting/sqldog.git</developerConnection>
+  	<url>https://github.com/Michael-Heinzelmann-IT-Consulting/dog4sql.git</url>
+  	<connection>scm:git:git://github.com/Michael-Heinzelmann-IT-Consulting/dog4sql.git</connection>
+  	<developerConnection>scm:git:git://github.com/Michael-Heinzelmann-IT-Consulting/dog4sql.git</developerConnection>
   </scm>
   <issueManagement>
-  	<url>https://github.com/Michael-Heinzelmann-IT-Consulting/sqldog/issues</url>
+  	<url>https://github.com/Michael-Heinzelmann-IT-Consulting/dog4sql/issues</url>
   	<system>github</system>
   </issueManagement>
   <organization>
