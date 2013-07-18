@@ -17,4 +17,16 @@
       </plugin>
     </plugins>
   </build>
+  <scm>
+  	<url>https://github.com/Michael-Heinzelmann-IT-Consulting/sqldog.git</url>
+  	<connection>scm:git:git://github.com/Michael-Heinzelmann-IT-Consulting/sqldog.git</connection>
+  	<developerConnection>scm:git:git://github.com/Michael-Heinzelmann-IT-Consulting/sqldog.git</developerConnection>
+  </scm>
+  <issueManagement>
+  	<url>https://github.com/Michael-Heinzelmann-IT-Consulting/sqldog/issues</url>
+  	<system>github</system>
+  </issueManagement>
+  <organization>
+  	<name>Michael Heinzelmann IT Consulting</name>
+  </organization>
 </project>
