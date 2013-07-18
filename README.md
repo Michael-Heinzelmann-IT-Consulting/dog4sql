@@ -3,7 +3,7 @@ sqldog
 
 JDBC database client for application developers and support
 
-Originally developed 2004 since July 2013 now on github
+Originally developed 2003 since July 2013 now on github
 
 Features:
 
