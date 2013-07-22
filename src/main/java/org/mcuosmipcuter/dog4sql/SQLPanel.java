@@ -284,17 +284,17 @@ AdjustmentListener
       sqlWindow.setUI(new HighlightingUI(syntaxPainter, document));
       syntaxPainter.setReservedWords(bundle);
 
-      scrollPaneSQL.setBackground(new Color(187, 221, 228));
+      scrollPaneSQL.setBackground(Constants.COLOR_APP);
       scrollPaneSQL.getHorizontalScrollBar().setPreferredSize(new Dimension(
           14, 14));
       scrollPaneSQL.getVerticalScrollBar().setPreferredSize(new Dimension(17,
           17));
-      scrollPaneScratch.setBackground(new Color(187, 221, 228));
+      scrollPaneScratch.setBackground(Constants.COLOR_APP);
       scrollPaneScratch.getHorizontalScrollBar().setPreferredSize(new
           Dimension(12, 12));
       scrollPaneScratch.getVerticalScrollBar().setPreferredSize(new Dimension(
           15, 15));
-      scrollPaneTree.setBackground(new Color(187, 221, 228));
+      scrollPaneTree.setBackground(Constants.COLOR_APP);
       scrollPaneTree.getHorizontalScrollBar().setPreferredSize(new
           Dimension(12, 12));
       scrollPaneTree.getVerticalScrollBar().setPreferredSize(new Dimension(
@@ -445,7 +445,7 @@ AdjustmentListener
     border16 = BorderFactory.createLineBorder(new Color(80, 80, 160),1);
     border17 = BorderFactory.createMatteBorder(0,1,0,1,new Color(80, 80, 160));
     this.setLayout(borderLayout1);
-    splitPane.setBackground(new Color(187, 221, 228));
+    splitPane.setBackground(Constants.COLOR_APP);
     splitPane.setBorder(null);
     splitPane.setDoubleBuffered(false);
     splitPane.setContinuousLayout(false);
@@ -482,20 +482,20 @@ AdjustmentListener
     scrollPaneScratch.setMinimumSize(new Dimension(100, 50));
     scrollPaneScratch.setPreferredSize(new Dimension(75, 32));
     scrollPaneSQL.setViewportBorder(border15);
-    scrollPaneSQL.getViewport().setBackground(new Color(187, 221, 228));
+    scrollPaneSQL.getViewport().setBackground(Constants.COLOR_APP);
     scrollPaneSQL.setAlignmentY((float) 0.5);
     scrollPaneSQL.setBorder(null);
     scrollPaneSQL.setPreferredSize(new Dimension(75, 32));
     scrollPaneSQL.getVerticalScrollBar().addAdjustmentListener(this);
-    splitPane2.setBackground(new Color(187, 221, 228));
+    splitPane2.setBackground(Constants.COLOR_APP);
     splitPane2.setBorder(null);
     splitPane2.setDividerSize(12);
     splitPane2.setOneTouchExpandable(true);
     scrollPaneTree.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_AS_NEEDED);
     scrollPaneTree.setViewportBorder(border15);
     //jScrollPane3.setViewport(null);
-    scrollPaneTree.setBackground(new Color(187, 221, 228));
-    //jScrollPane3.getViewport().setBackground(new Color(187, 221, 228));
+    scrollPaneTree.setBackground(Constants.COLOR_APP);
+    //jScrollPane3.getViewport().setBackground(Constants.COLOR_APP);
     scrollPaneTree.setAlignmentY((float) 0.5);
     scrollPaneTree.setAutoscrolls(false);
         scrollPaneTree.setBorder(null);
@@ -505,7 +505,7 @@ AdjustmentListener
     scrollPaneTree.setToolTipText("displays database metadata tree");
     scrollPaneTree.setVerifyInputWhenFocusTarget(true);
 
-    this.setBackground(new Color(187, 221, 228));
+    this.setBackground(Constants.COLOR_APP);
     this.setAlignmentY((float) 0.5);
     this.setBorder(null);
     this.setPreferredSize(new Dimension(520, 342));

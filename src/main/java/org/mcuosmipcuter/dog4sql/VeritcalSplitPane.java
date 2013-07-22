@@ -29,7 +29,7 @@ public class VeritcalSplitPane extends JSplitPane implements WorkSpacePersistenc
 	{
 		//super(JSplitPane.VERTICAL_SPLIT, true, upper, lower);
         super(JSplitPane.VERTICAL_SPLIT);
-        setBackground(new Color(187, 221, 228));
+        setBackground(Constants.COLOR_APP);
         super.setTopComponent(upper);
         super.setBottomComponent(lower);
         try {

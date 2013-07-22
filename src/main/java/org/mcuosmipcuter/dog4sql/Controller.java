@@ -109,7 +109,7 @@ public class Controller
 	}
 	
 	static Color appBackGround(){
-		return new Color(187, 221, 228);
+		return Constants.COLOR_APP;
 	}
 
 	//<cvs/>added trace method

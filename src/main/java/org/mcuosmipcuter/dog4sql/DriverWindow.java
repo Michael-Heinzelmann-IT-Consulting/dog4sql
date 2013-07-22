@@ -158,7 +158,7 @@ public class DriverWindow extends JFrame
     private void jbInit() throws Exception {
       border1 = BorderFactory.createEmptyBorder(0,10,0,10);
         jPanel1.setLayout(gridLayout1);
-      jPanel2.setBackground(new Color(187, 221, 228));
+      jPanel2.setBackground(Constants.COLOR_APP);
     jPanel2.setLayout(borderLayout1);
       jPanel3.setMinimumSize(new Dimension(100, 100));
     jPanel3.setOpaque(false);
@@ -170,7 +170,7 @@ public class DriverWindow extends JFrame
     jButtonClose.setPreferredSize(new Dimension(65, 25));
     jButtonClose.setText("close");
     jButtonClose.addActionListener(new Dog4SQLDriverWindow_jButtonClose_actionAdapter(this));
-        this.getContentPane().setBackground(new Color(187, 221, 228));
+        this.getContentPane().setBackground(Constants.COLOR_APP);
     this.setDefaultCloseOperation(HIDE_ON_CLOSE);
     this.setResizable(false);
     this.setTitle("Drivers");

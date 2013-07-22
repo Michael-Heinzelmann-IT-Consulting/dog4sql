@@ -18,6 +18,7 @@
 */
 package org.mcuosmipcuter.dog4sql;
 
+import java.awt.Color;
 import java.awt.Font;
 import java.awt.Insets;
 import java.io.PrintStream;
@@ -63,10 +64,9 @@ public class Constants
 	public static final String WINDOW_TITLE_NOT_CONNECTED	= "Dog4SQL";
 	public static final String WINDOW_TITLE_CONNECTED		= "Dog4SQL connected to ";
 	public static final String NULL_RESULT_REPRESENTATION	= "<<NIL>>";
+	public static final java.awt.Color COLOR_APP = new Color(187, 221, 228);
 	public static final java.awt.Color COLOR_BORDER = new java.awt.Color(0, 127, 197);
-	//public static final java.awt.Color COLOR_ERROR	= new java.awt.Color(255, 127, 127);
     public static final java.awt.Color COLOR_ERROR	= new java.awt.Color(255, 207, 207);
-	//public static final java.awt.Color COLOR_ALRIG	= new java.awt.Color(197, 255, 63);
     public static final java.awt.Color COLOR_ALRIG	= new java.awt.Color(217, 255, 163);
     public static final java.awt.Color COLOR_DISCONNECTED	= new java.awt.Color(255, 255, 63);
 

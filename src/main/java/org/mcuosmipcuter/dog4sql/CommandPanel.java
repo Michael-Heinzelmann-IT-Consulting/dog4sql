@@ -335,7 +335,7 @@ public class CommandPanel extends JPanel implements 	ActionListener,
   }
   private void jbInit() throws Exception {
 
-    this.setBackground(new Color(187, 221, 228));
+    this.setBackground(Constants.COLOR_APP);
     this.setFont(new java.awt.Font("MS Sans Serif", 0, 11));
     this.setForeground(new Color(40, 118, 173));
     this.setBorder(null);

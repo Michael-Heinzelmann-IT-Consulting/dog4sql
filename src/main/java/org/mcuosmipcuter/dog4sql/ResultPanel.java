@@ -388,7 +388,7 @@ public class ResultPanel extends JPanel implements WorkSpacePersistence,
     border1 = BorderFactory.createLineBorder(new Color(208, 228, 220),4);
     border2 = BorderFactory.createLineBorder(new Color(255, 255, 60),1);
     border3 = BorderFactory.createCompoundBorder(BorderFactory.createLineBorder(Color.lightGray,1),BorderFactory.createEmptyBorder(0,4,0,6));
-    border4 = BorderFactory.createLineBorder(new Color(187, 221, 228),2);
+    border4 = BorderFactory.createLineBorder(Constants.COLOR_APP,2);
     border5 = BorderFactory.createLineBorder(new Color(60, 60, 160),2);
     border6 = BorderFactory.createLineBorder(new Color(60, 60, 160),2);
     border7 = BorderFactory.createLineBorder(new Color(255, 214, 42),6);
@@ -396,7 +396,7 @@ public class ResultPanel extends JPanel implements WorkSpacePersistence,
     border8 = BorderFactory.createCompoundBorder(new TitledBorder(BorderFactory.createLineBorder(new Color(201, 69, 138),6),"results"),BorderFactory.createEmptyBorder(0,6,0,0));
     border9 = BorderFactory.createLineBorder(new Color(80, 80, 160),1);
     this.setLayout(borderLayout1);
-    panelNorth.setBackground(new Color(187, 221, 228));
+    panelNorth.setBackground(Constants.COLOR_APP);
     panelNorth.setAlignmentX((float) 0.5);
     panelNorth.setBorder(border4);
     panelNorth.setDebugGraphicsOptions(0);
@@ -407,7 +407,7 @@ public class ResultPanel extends JPanel implements WorkSpacePersistence,
         panelSettings.setPreferredSize(new Dimension(781, 28));
     gridLayout1.setColumns(1);
     jSplitPane1.setOrientation(JSplitPane.VERTICAL_SPLIT);
-    jSplitPane1.setBackground(new Color(187, 221, 228));
+    jSplitPane1.setBackground(Constants.COLOR_APP);
     jSplitPane1.setEnabled(true);
     jSplitPane1.setForeground(Color.black);
     jSplitPane1.setAlignmentY((float) 0.0);
@@ -458,7 +458,7 @@ public class ResultPanel extends JPanel implements WorkSpacePersistence,
     sPaneOut.setBorder(null);
     sPaneOut.setMinimumSize(new Dimension(100, 100));
     sPaneOut.setToolTipText("");
-    this.setBackground(new Color(187, 221, 228));
+    this.setBackground(Constants.COLOR_APP);
     this.setEnabled(false);
     this.setAlignmentX((float) 0.5);
         this.setBorder(null);
@@ -469,7 +469,7 @@ public class ResultPanel extends JPanel implements WorkSpacePersistence,
         sPaneMsg.getViewport().setBackground(Color.white);
         sPaneMsg.setBorder(null);
     sPaneMsg.setMinimumSize(new Dimension(56, 20));
-    panelRes.setBackground(new Color(187, 221, 228));
+    panelRes.setBackground(Constants.COLOR_APP);
     panelRes.setOpaque(true);
     tfFind.setBorder(BorderFactory.createLoweredBevelBorder());
 	tfFind.setPreferredSize(new Dimension(106, 19));
