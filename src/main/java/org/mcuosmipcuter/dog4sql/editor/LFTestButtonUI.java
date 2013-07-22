@@ -258,11 +258,9 @@ public class LFTestButtonUI
     }
   }
 
-  protected static void drawBorder(Graphics g, JComponent c)
-  {
+  protected static void drawBorder(Graphics g, JComponent c) {
     g.setColor(new Color(25, 25, 124));
-    int r = 2;
-    g.drawRoundRect(0, 0, c.getWidth() - 1, c.getHeight() - 1, r, r);
+    g.drawRect(0, 0, c.getWidth() - 1, c.getHeight() - 1);
   }
 
 }
