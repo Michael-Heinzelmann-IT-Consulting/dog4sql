@@ -20,26 +20,17 @@ package org.mcuosmipcuter.dog4sql;
 
 import javax.swing.UIManager;
 
-class Main
-{
-	public static void main(String[] args)
+class Main {
+	public static void main(String[] args) throws Exception
 	{
-        try {
-            System.out.println("claspath_bef:" + System.getProperty("java.class.path"));
-            //System.load("C:\\bea\\weblogic81\\common\\eval\\pointbase\\lib\\pbclient44.jar");
+        Controller.trace(3, "claspath_bef:" + System.getProperty("java.class.path"));
+        UIManager.setLookAndFeel("org.mcuosmipcuter.dog4sql.editor.LFTest");
 
-            //C:\bea\weblogic81\common\eval\pointbase\lib\pbclient44.jar
-            //UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
-            //UIManager.setLookAndFeel("com.sun.java.swing.plaf.motif.MotifLookAndFeel");
-            UIManager.setLookAndFeel("org.mcuosmipcuter.dog4sql.editor.LFTest");
-            //UIManager.setLookAndFeel("com.incors.plaf.kunststoff.KunststoffLookAndFeel");
-        }
-        catch(Exception e) {
-        }
 		Frame s = new Frame();
         s.setVisible(true);
-        if(s.getMaximised())
+        if(s.getMaximised()) {
             s.setExtendedState(javax.swing.JFrame.MAXIMIZED_BOTH);
+        }
 
 	}
 
