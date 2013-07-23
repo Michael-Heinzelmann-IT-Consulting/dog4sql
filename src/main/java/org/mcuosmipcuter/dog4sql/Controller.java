@@ -115,8 +115,18 @@ public class Controller
 	//<cvs/>added trace method
 	static void trace(int localTraceLevel, String message)
 	{
-		if(applicationTraceLevel >= localTraceLevel)
-			Constants.TRACE_PRINT_STREAM.println(message);
+		if(applicationTraceLevel >= localTraceLevel) {
+			String prefix = "";
+			if(applicationTraceLevel > Constants.TRACE_DEFAULT_LEVEL) {
+				StackTraceElement[] stackTrace = new Exception().getStackTrace();
+				if(stackTrace.length >= 2) {
+					prefix = "(" + localTraceLevel + ") " + stackTrace[1].getClassName() +
+							"." + stackTrace[1].getMethodName() + 
+							" (" + stackTrace[1].getLineNumber() + "): ";
+				}
+			}
+			Constants.TRACE_PRINT_STREAM.println(prefix  + message);
+		}
 	}
 
 	//<cvs/>added overloaded trace method to take exceptions
